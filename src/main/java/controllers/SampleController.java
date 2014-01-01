@@ -16,6 +16,11 @@ public class SampleController {
         return "/home";
     }
 
+    @RequestMapping(value = "/hello/{url}", method = RequestMethod.GET)
+    @ResponseBody String hello(@PathVariable("url") String url) {
+        return url;
+    }
+
     public static void main(String[] args) throws Exception {
         String webPort = System.getenv("PORT");
         if (webPort == null || webPort.isEmpty()) {
