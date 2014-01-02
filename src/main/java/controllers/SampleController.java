@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.*;
 public class SampleController {
 
     @RequestMapping("/")
-    String home() {
-        return "/home";
+    public String test() {
+        return "home";
     }
 
     @RequestMapping(value = "/hello/{url}", method = RequestMethod.GET)
@@ -27,7 +27,6 @@ public class SampleController {
             webPort = "8080";
         }
         System.setProperty("server.port", webPort);
-        SpringApplication springApplication = new SpringApplication(SampleController.class);
-        springApplication.run(args);
+        SpringApplication.run(SampleController.class, new String[]{"--debug"});
     }
 }
