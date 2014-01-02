@@ -1,92 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+<div layout:decorator="layout" layout:fragment="content">
+    <div class="row">
+        <div class="span12">
+            <div class="well">
+                <form>
+                    <div class="form-group">
 
-    <title>Is it still up?</title>
+                        <input id="search" type="text"
+                               placeholder="http://www.google.com"/>
 
-    <link href="/resources/css/bootstrap/bootstrap.min.css"
-          rel="stylesheet"/>
+                        <button id="search-button" type="submit">Check
+                        </button>
 
-    <script type="text/javascript"
-            src="/webjars/angularjs/1.2.6/angular.min.js"/>
+                    </div>
 
-    <script type="text/javascript" src="/resources/js/app.js"/>
-    <script type="text/javascript" src="/resources/js/controllers.js"/>
-    <script type="text/javascript" src="/resources/js/services.js"/>
-    <style>
-        #search {
-            width: 80%;
-        }
-
-        #search-button {
-            margin-bottom: 10px;
-        }
-
-    </style>
-</head>
-<body>
-
-<!-- Navbar
-  ================================================== -->
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse"
-               data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="../">Is it still running?</a>
-
-            <div class="nav-collapse collapse" id="main-menu">
-                <ul class="nav" id="main-menu-left">
-                    <li><a>Sign Up</a></li>
-                    <li><a>Login</a></li>
-                </ul>
+                </form>
             </div>
         </div>
+
     </div>
 </div>
-
-<div class="container">
-
-
-    <!-- Typography
-    ================================================== -->
-    <section id="typography">
-        <div class="page-header">
-            <h1></h1>
-        </div>
-
-        <!-- Headings & Paragraph Copy -->
-        <div class="row">
-
-            <div class="span12">
-                <div class="well">
-                    <form>
-                        <div class="form-group">
-
-                            <input id="search" type="text"
-                                   placeholder="http://www.google.com"/>
-
-                            <button id="search-button" type="submit">Check
-                            </button>
-
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-
-    </section>
-</div>
-
-</body>
-</html>
