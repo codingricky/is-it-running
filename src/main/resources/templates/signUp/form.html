@@ -1,7 +1,7 @@
 <div layout:decorator="layout" layout:fragment="content">
     <div class="container">
         <h2>Sign Up</h2>
-        <span><</span>
+        <span th:text="${signUpForm.email}"></span>
         <form role="form" th:action="@{~/signUp}" th:object="${signUpForm}" method="post">
             <div class="form-group">
                 <label for="email">Email address</label>
