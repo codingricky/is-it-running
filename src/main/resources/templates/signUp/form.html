@@ -1,0 +1,13 @@
+<div layout:decorator="layout" layout:fragment="content">
+    <div class="container">
+        <h2>Sign Up</h2>
+        <span><</span>
+        <form role="form" th:action="@{~/signUp}" th:object="${signUpForm}" method="post">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input placeholder="Enter email" th:field="*{email}" />
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>

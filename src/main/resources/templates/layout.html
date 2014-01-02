@@ -7,25 +7,15 @@
 
     <title>Is it still up?</title>
 
-    <link href="/resources/css/bootstrap/bootstrap.min.css"
-          rel="stylesheet"/>
+    <link href="/resources/css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/resources/css/main.css" rel="stylesheet"/>
 
-    <script type="text/javascript"
-            src="/webjars/angularjs/1.2.6/angular.min.js"/>
+    <script type="text/javascript" src="/webjars/angularjs/1.2.6/angular.min.js"/>
 
     <script type="text/javascript" src="/resources/js/app.js"/>
     <script type="text/javascript" src="/resources/js/controllers.js"/>
     <script type="text/javascript" src="/resources/js/services.js"/>
-    <style>
-        #search {
-            width: 80%;
-        }
 
-        #search-button {
-            margin-bottom: 10px;
-        }
-
-    </style>
 </head>
 <body>
 
@@ -44,7 +34,7 @@
 
             <div class="nav-collapse collapse" id="main-menu">
                 <ul class="nav" id="main-menu-left">
-                    <li><a>Sign Up</a></li>
+                    <li><a th:href="@{~/signUp}">Sign Up</a></li>
                     <li><a>Login</a></li>
                 </ul>
             </div>
